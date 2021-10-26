@@ -1,0 +1,90 @@
+ .about__container {
+	row-gap: 1.4rem;
+	max-width: 60rem;
+	text-align: initial;
+
+	.about__img {
+		justify-self: center;
+		img {
+			object-fit: cover;
+			width: 220px;
+			height: 220px;
+			border-radius: .4rem;
+			margin-bottom: 8px;
+		}
+	}
+	div{
+		.about__subtitle {
+			margin-bottom: $mb-2;
+		}
+		.about__text {
+			border-bottom: 1px solid lightgray;
+			padding: 0 0 1rem 0;
+		}
+		.about__more {
+			padding: 1rem 0 0 0;
+			
+			.about__more__text {
+				margin: 0.2rem 0;
+
+				span{
+					margin-left: 5px;
+				}
+				.home__title-color{
+					color: $first-color;
+				}
+
+			}
+		}
+		.about__social {
+			margin: 1rem 0 0 0;
+			.about__icon {
+				font-size: 1.5rem;
+				color: $second-color;
+				margin: 0 $mb-2 0 0;
+				transition: all 0.3s ease;
+				&:hover {
+					color: $first-color;
+					transition: all 0.3s ease;
+				}
+			}
+		}
+		.resume__download__cont{
+			margin: 12px 0 6px 0;
+
+			.resume__download{
+				color:white;
+				background: $first-color;
+				padding: 4.9px 11.8px;
+				border-radius: 5px;
+				font-size: 17px;
+				text-decoration: none;
+				border: 1px solid $first-color;
+				transition: all 0.28s ease;
+				&:hover{
+					color: $first-color;
+					background: white;
+					transition: all 0.28s ease;
+				}
+
+				i{
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.about__container {
+		grid-template-columns: repeat(2,1fr);
+		text-align: initial;
+		.about__img {
+			img {
+				width: 300px;
+				height: auto;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

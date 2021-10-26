@@ -1,0 +1,43 @@
+.edu__container {
+	max-width: 50rem;
+	border-left: 4px solid #00be95;
+	.resume-container {
+		margin-left: 15px;
+		.resume-item {
+			margin: 0 0 2rem 0;
+			.resume-title {
+				margin: 1.2rem 0 0.4rem 0;
+				font-size: 1.45rem;
+				font-weight: 600;
+				color: $second-color; 
+				i {
+					margin-left: 20px;
+				}
+			}
+			.resume-item-details {
+				font-size: 1.1rem;
+			}
+			.resume-item-para{
+				margin-top: 10px;
+			}
+			
+		}
+	}
+}
+@media screen and (max-width:650px) {
+	.edu__container {
+		border-left: 3px solid #00be95;
+		.resume-container {
+			.resume-item {
+				.resume-title {
+					font-size: 1.22rem;
+					margin: 1rem 0 0.34rem 0;
+					font-weight: 700;
+					i{
+						margin-left: 10px;
+					}
+				}
+			}
+	  }
+	}
+}
