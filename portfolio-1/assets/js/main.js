@@ -100,6 +100,11 @@ formBtn.addEventListener("click",function(){
     alert("Success!");
 });
 
+
+//Update age every year according to he birthyear
+document.getElementById('my__age').innerHTML = new Date().getFullYear() - 2002;
+
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -138,7 +143,6 @@ sr.reveal('.work__img',{interval: 200});
 sr.reveal('.contact__details h2',{delay: 160});
 sr.reveal('.contact__tool',{interval: 200});
 sr.reveal('.contact__input',{interval: 200}); 
-
 
 
 
